@@ -126,6 +126,14 @@ header nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
+h1 {
+    font-size: 2.5rem;
+    color: #014AAC;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 .footer {
     background-color: #014AAC;
     color: #fff;
