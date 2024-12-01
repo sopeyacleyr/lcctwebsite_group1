@@ -1,0 +1,240 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url('images/1.png') no-repeat center center fixed; 
+    background-size: auto;
+    position: fixe; 
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 20px;
+    background: rgba(1, 74, 172, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    position: fixed;
+    top: 1;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #014AAC;
+}
+
+header .logo img {
+    height: 80px;
+    width: auto;
+}
+
+header .logo img {
+    height: 80px;
+    width: auto;
+}
+
+header .logo a {
+  display: inline-block;
+}
+
+header .logo a:hover img {
+  opacity: 0.8; 
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #014AAC;
+}
+
+/* Dropdown Styles */
+header nav ul li {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(90, 118, 174, 0.9);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-menu li {
+    padding: 0;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 0;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #014AAC;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+
+
+/* Content Section */
+.shs-content {
+    text-align: center;
+    padding: 150px 20px;
+    color: #fff; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.shs-contents h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Application Forms Section */
+.application-forms {
+    background: rgba(255, 255, 255, 0.85); 
+    padding: 40px 20px;
+    margin: 0;
+    min-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms Section Title */
+.application-forms h1 {
+    font-size: 2rem;
+    color: #014AAC;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Forms Container */
+.forms-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%; 
+    max-width: 800px; 
+}
+
+/* Individual Form Item */
+.form-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-item h2 {
+    font-size: 1.2rem;
+    color: #014AAC;
+    margin-bottom: 10px;
+}
+
+.form-item a {
+    color: #fff;
+    background: #014AAC;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: inline-block; 
+}
+
+.form-item a:hover {
+    background: #01327a;
+}
+
+/* Footer */
+.footer {
+    background-color: #014AAC;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content a {
+    color: #f4f4f4;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
