@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    position: fixed;
+    top: 1;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #014AAC;
+}
+
+header .logo img {
+    height: 80px;
+    width: auto;
+}
+
+header .logo img {
+    height: 80px;
+    width: auto;
+}
+
+header .logo a {
+  display: inline-block;
+}
+
+header .logo a:hover img {
+  opacity: 0.8; 
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #014AAC;
+}
+
+
+/* Banner Section */
+.shs-content {
+    position: relative;
+    width: 120%; /* Ensure it spans the full width */
+    height: 700px; /* Set the desired height for the banner */
+    overflow: hidden; /* Hide any overflow if the image is too big */
+}
+
+.shs-contents {
+    position: absolute;
+    top: 50%; /* Center the content vertically */
+    left: 40%; /* Center the content horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.shs-image {
+    width: 100%; /* Make the image fill the container's width */
+    height: 100%; /* Make the image fill the container's height */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+}
+
+
+/* Dropdown Styles */
+header nav ul li {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(90, 118, 174, 0.9);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-menu li {
+    padding: 0;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 0;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #014AAC;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 80px;
+    width: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #014AAC;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(90, 118, 174, 0.9);
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li a {
+    color: white;
+    display: block;
+    padding: 10px 15px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #014AAC;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Footer */
+.footer-content {
+    background-color: #014AAC;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content a {
+    color: #f4f4f4;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+
+/* Mission Statement Section */
+.mission-statement {
+    background-color: #f4f4f4;
+    padding: 40px 30px;
+    margin: 40px auto;
+    max-width: 1650px; /* Increased max-width to accommodate both content and image */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.mission-content {
+    display: flex; /* Flexbox to align the image and text side by side */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Add space between the text and image */
+}
+
+.mission-text {
+    flex: 1; /* Text will take up remaining space */
+    text-align: left;
+}
+
+.mission-image {
+    flex: 0 0 50%; /* Image will take up 50% of the width */
+}
+
+.mission-image img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto;
+    border-radius: 8px;
+}
+
+.mission-statement h1 {
+    font-size: 1.8em;
+    color: #014AAC;
+    margin-bottom: 20px;
+}
+
+.mission-statement p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.mission-statement button {
+    display: block;
+    background-color: #014AAC;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 20px auto 0;
+}
+
+.mission-statement button a {
+    text-decoration: none;
+    color: white;
+}
+
+.mission-statement button:hover {
+    background-color: rgba(1, 74, 172, 0.8);
+}
+.mission-statement button a {
+    display: inline-block; /* Make the <a> behave like a block-level element */
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.mission-statement button a:hover {
+    color: #fff; /* Keeps the text color white even on hover */
+}
