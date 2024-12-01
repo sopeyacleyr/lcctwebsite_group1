@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Event - LCC Tanauan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="events.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/lcctlogo.png" alt="La Consolacion College Tanauan Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#aboutus.html">About Us</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="event-banner">
+            <img src="images/lcctbanner.png" alt="Upcoming Event">
+            <div class="event-title">
+                <h1>Upcoming Event</h1>
+                <p>Stay updated with our latest activities and events</p>
+            </div>
+        </section>
+
+        <section class="event-list">
+            <article class="event-item">
+                <img src="images/event1.png" alt="Christmas Party">
+                <div class="event-details">
+                    <h2>Christmas Party</h2>
+                    <p><strong>Date:</strong> To be announced</p>
+                    <p><strong>Location:</strong> LCC Tanauan Grounds</p>
+                    <button class="btn read-more-btn" data-target="#event1-modal">Read More</button>
+                </div>
+            </article>
+
+            <article class="event-item">
+                <img src="images/event2.jpg" alt="Coming Soon">
+                <div class="event-details">
+                    <h2>Coming Soon</h2>
+                    <p><strong>Date:</strong> To be announced</p>
+                    <p><strong>Location:</strong> TBA</p>
+                    <button class="btn read-more-btn" data-target="#event2-modal">Read More</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LCC Tanauan. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Event 1 Modal -->
+    <div id="event1-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Christmas Party Details</h2>
+            <p>Join us for a festive celebration!</p>
+        </div>
+    </div>
+
+    <!-- Event 2 Modal -->
+    <div id="event2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Coming Soon Event Details</h2>
+            <p>More exciting events will be announced soon. Stay tuned!</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".read-more-btn").forEach(button => {
+                button.addEventListener("click", () => {
+                    document.querySelector(button.getAttribute("data-target")).style.display = "flex";
+                });
+            });
+
+            document.querySelectorAll(".close").forEach(close => {
+                close.addEventListener("click", () => {
+                    close.closest(".modal").style.display = "none";
+                });
+            });
+
+            window.addEventListener("click", event => {
+                if (event.target.classList.contains("modal")) {
+                    event.target.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
